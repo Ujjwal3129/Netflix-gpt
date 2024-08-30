@@ -15,7 +15,10 @@
 - Created Redux Store with userSlice
 - Implemented sign out
 - Update Profile
-
+- Bugfix: sign up user display name and profile picutre update profile      
+- Bugfix: If the user is not looged in Redirect /browse to login page and vice versa
+- Unsubscribe to the onAuthChanged callback function
+- ADD hardcorded value to constant file
 
 
 

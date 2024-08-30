@@ -5,7 +5,7 @@ export const checkValidData =(email,password,fullname)=>{
 
     if(!isEmailVaild) return "Email is not valid";
     if(!isPasswordVaild) return "Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, and one number";
-    if(!isFullNameValid) return "Full name should be between 3 and 16 characters long and consist of only letters";
+    // if(!isFullNameValid) return "Full name should be between 3 and 16 characters long and consist of only letters";
 
     return null;
 };
