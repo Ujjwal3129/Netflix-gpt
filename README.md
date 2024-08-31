@@ -18,7 +18,28 @@
 - Bugfix: sign up user display name and profile picutre update profile      
 - Bugfix: If the user is not looged in Redirect /browse to login page and vice versa
 - Unsubscribe to the onAuthChanged callback function
-- ADD hardcorded value to constant file
+- ADD hardcorded value to constant file 
+- Add hardcoded values to the constants file
+- Regiter TMDB API & create an app & get access token
+- Get Data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update Store with movies Data
+- Planning for MainContauiner & secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Yotube video and make it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
+- Build Secondary Component
+- Build Movie List
+- build Movie Card
+- TMDB Image CDN URL
+- Made the Browsre page amazing with Tailwind CSS
+- usePopularMovies Custom hook
+- GPT Search Page
+- GPT Search Bar
+- (BONUS) Multi-language Feature in our App
+- Integrate Multi-langugae Feature In out App
 
 
 
