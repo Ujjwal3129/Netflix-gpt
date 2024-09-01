@@ -89,7 +89,7 @@ function Login() {
       <Header />
       <div>
         <img
-          className="absolute"
+          className="absolute h-screen object-cover"
           src={BG_URL}
           alt=""
         />
@@ -97,7 +97,7 @@ function Login() {
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute bg-[#0D0805] bg-opacity-80 p-12 w-1/3 text-center my-12 mx-auto right-0 left-0 text-white"
+        className="absolute bg-[#0D0805] bg-opacity-80 p-12 w-full md:w-1/3 text-center my-20 md:my-14 mx-auto right-0 left-0 text-white"
       >
         <h2 className="font-bold text-3xl">
           {signInForm ? "Login" : "Sign up"}

@@ -51,17 +51,17 @@ function Header() {
     dispatch(toggleGptSearchView());
   };
 
-  const handleLanguageChange = (e)=>{
+  const handleLanguageChange = (e) => {
     // console.log(e);
 
-    dispatch(changeLanguage(e.target.value))
-  }
+    dispatch(changeLanguage(e.target.value));
+  };
   return (
-    <div className="absolute flex justify-between w-screen px-36 py-3 bg-gradient-to-b from-black z-10 ">
-      <img className="w-44" src={logo} alt="logo" />
-      
+    <div className="absolute flex  md:justify-between w-screen md:px-36 md:py-3 bg-gradient-to-b from-black z-10 flex-col md:flex-row items-center ">
+      <img className="w-44 mx-auto md:mx-0" src={logo} alt="logo" />
+
       {user && (
-        <div className="flex p-3 gap-3">
+        <div className="flex p-3 gap-10 md:gap-5">
           <img
             className="w-12 h-12 rounded-md "
             src={user?.photoURL}
@@ -77,15 +77,20 @@ function Header() {
             onClick={handleGPTSearchClick}
             className="px-3 py-2 rounded-lg text-white bg-purple-800 "
           >
-           {showGptSearch ? "Home page" : "Gpt Search"}
+            {showGptSearch ? "Home page" : "Gpt Search"}
           </button>
-         {showGptSearch && <select onChange={handleLanguageChange} className="px-3 py-2 rounded-lg bg-gray-400 text-black">
-        {SUPPORTED_LANGUAGES.map((lang) => (
-          <option key={lang.identifier} value={lang.identifier}>
-            {lang.name}
-          </option>
-        ))}
-      </select>}
+          {showGptSearch && (
+            <select
+              onChange={handleLanguageChange}
+              className="px-3 py-2 rounded-lg bg-gray-400 text-black"
+            >
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <option key={lang.identifier} value={lang.identifier}>
+                  {lang.name}
+                </option>
+              ))}
+            </select>
+          )}
         </div>
       )}
     </div>
